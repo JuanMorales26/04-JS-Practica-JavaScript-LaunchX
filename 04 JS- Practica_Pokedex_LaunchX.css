@@ -1,0 +1,226 @@
+head{
+    background-color: black;
+}
+body{
+    text-align: center;
+    background-image: url(https://i.ibb.co/Tv2DQfy/Platilla-Pokedex.png);
+    background-repeat: no-repeat;
+    background-position-x:center;
+    background-position-y:top;
+    background-size: 59vw;
+    background-color: white;
+    background-color: gray;
+    /*border-style: groove;
+    border-left: solid rgb(0, 0, 0);   
+    border-top: solid rgb(0, 0, 0); 
+    border-right: solid rgb(0, 0, 0); 
+    border-bottom: solid rgb(0, 0, 0);  */
+}
+.p1{
+    position: absolute;
+    top: -0.3vw;
+    left: 57vw;
+}
+.style1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 2vw;
+    color: black;
+    background-color: rgb(241, 241, 146);
+    border-style: groove;
+    border-left: solid rgba(0,0,0);   
+    border-top: solid rgba(0,0,0);
+    border-right: solid rgba(0,0,0); 
+    border-bottom: solid rgba(0,0,0);
+    border-radius: 10vw;
+    width: 20vw;
+    height: 2.5vw;
+}
+.style2{
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+    position: absolute;
+    top: 34vw;
+    left: 26vw;
+    width: 10vw;
+    height: 4vw;
+    color: black;
+    background-color: rgba(85,171,98);
+    /*background-color: yellow;*/
+    border-style: groove;
+    border-left: solid rgba(85,171,98);   
+    border-top: solid rgba(85,171,98);
+    border-right: solid rgba(85,171,98); 
+    border-bottom: solid rgba(85,171,98);
+    border-radius: 1vw;
+}
+.p2{
+    position: absolute;
+    top: 13.5vw;
+    left: 30vw;
+}
+.round_bott1{
+    position: absolute;
+    top: 30vw;
+    left: 23.5vw;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: black;
+}
+.bott2_left{
+    width: 0vw;
+    height: 0vw;
+    border-top: 2vw solid transparent;
+    border-right: 2.8vw solid transparent;
+    border-left: 2.8vw solid black;
+    border-bottom: 2vw solid transparent;
+    background-color: transparent;
+    border-radius: 2vw;
+    border-radius: 1vw;
+    position: absolute;
+    top: 34vw;
+    left: 37.8vw;
+}
+.bott2_right{
+    width: 0vw;
+    height: 0vw;
+    border-top: 2vw solid transparent;
+    border-right: 2.8vw solid black;
+    border-left: 2.8vw solid transparent;
+    border-bottom: 2vw solid transparent;
+    background-color: transparent;
+    border-radius: 2vw;
+    border-radius: 1vw;
+    position: absolute;
+    top: 34vw;
+    left: 40.6vw;
+}
+.bott2_top{
+    width: 0vw;
+    height: 0vw;
+    border-top: 2.3vw solid gray;
+    border-right: 2vw solid transparent;
+    border-left: 2vw solid transparent;
+    border-bottom: 2.3vw solid transparent;
+    background-color: transparent;
+    border-radius: 2vw;
+    border-radius: 1vw;
+    position: absolute;
+    top: 32vw;
+    left: 40.25vw;
+}
+.bott2_bottom{
+    width: 0vw;
+    height: 0vw;
+    border-top: 2.3vw solid transparent;
+    border-right: 2vw solid transparent;
+    border-left: 2vw solid transparent;
+    border-bottom: 2.3vw solid gray;
+    background-color: transparent;
+    border-radius: 2vw;
+    border-radius: 1vw;
+    position: absolute;
+    top: 33vw;
+    left: 40.25vw;
+}
+.pokeID{
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: bolder;
+    position: absolute;
+    width: 15vw;
+    height: 2vw;
+    top: 23.7vw;
+    left: 28vw;
+    background-color: transparent;
+    border-style: hidden;    
+    /*border-left: solid rgba(85,171,98);   
+    border-top: solid rgba(85,171,98);
+    border-right: solid rgba(85,171,98); 
+    border-bottom: solid rgba(85,171,98);*/
+}
+.type{
+    background-color: transparent;
+    position: absolute;
+    border-style: hidden;
+    width: 15.8vw;
+    height: 2.8vw;
+    text-align:center;
+}
+.pokeInfo{
+    background-color: transparent;
+    border-style: hidden;
+    position: absolute;
+    color: green;
+    font-size: 1vw;
+    font-weight: bolder;
+    width: 15.5vw;
+    height: 1vw;
+    line-height: 0px;
+}
+.stats{
+    display: flex;
+    flex-wrap:  wrap;
+    position: absolute;
+    width: 1.6vw;
+    height: 3.3vw;
+    background-color: transparent;
+}
+.stat{
+    width: 1.6vw;
+    height: .25vw;
+    border-radius: .1vw;
+    border-style: hidden;
+    background-color: white;
+    font-size: 0vw;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 23.7vw;
+    left: 55.5vw;
+    width: 21.3vw;
+    height: 5.9vw;
+    border-radius: .1vw;
+    /*background-color: rgba(49,167,241);*/
+    background-color: transparent;
+}
+.item{
+    width: 3.3vw;
+    height: 2.3vw;
+    border-radius: .1vw;
+    border-style: inset;
+    border-left:  solid rgba(33,99,236);   
+    border-top: solid rgba(33,99,236);
+    border-right: solid rgba(33,99,236);
+    border-bottom: .2vw solid rgba(33,99,236);
+    background-color: rgba(49,167,241);;
+}
+.move{
+    color: black;
+    text-align: center;
+    font-size: .6vw;
+    font-weight: bolder;
+    width: 2.99vw;
+    height: 1.15vw;
+    border-radius: .1vw;
+    border-style: inset;
+    border-left: solid rgba(33,99,236);   
+    border-top: solid rgba(33,99,236);
+    border-right: solid rgba(33,99,236);
+    border-bottom: solid rgba(33,99,236);
+    background-color: rgba(49,167,241);
+    /*background-color: yellow;*/
+}
+.pokepropor{
+    background-color: transparent;
+    position: absolute;
+    border-style: hidden;
+    width: 15vw;
+    height: 1vw;
+    text-align: left;
+}

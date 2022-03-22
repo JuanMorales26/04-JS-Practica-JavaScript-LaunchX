@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./04 JS- Practica_Pokedex_LaunchX.css">
+        <title>Pokedex LaunchX</title>
+   </head>
+
+   <body>
+       <section>
+            <h1 class="p1 style1">Pokedex LaunchX_Rvw</h1>
+            <input type="text" placeholder="Pikachu" id="pokeName" name="pokeName" class="style2"><br><br>
+            <img class="p2" src="https://i.ibb.co/Gdfkvb7/Pokebola.png" alt="Pokemon" width="10%" id="pokeImg"><br><br>
+            <button onclick="fetchPokemon()" class="round_bott1"></button>
+
+            <button onclick="fetchLeftGuide()" class="bott2_left"></button>
+            
+            <button onclick="fetchRightGuide()" class="bott2_right"></button>
+            <!--
+            <button onclick="fetchToptGuide()" class="bott2_top"></button>
+            <button onclick="fetchBottomGuide()" class="bott2_bottom"></button> -->
+
+            <input type="text" class="pokeID" id="pokeID" name="pokeID" value="Welcome to my Pokedex">
+       </section>
+
+       <section class="type" style="top: 13.8vw; left: 57.6vw">
+           <input type="text" name="pokeType" id="pokeType" class="pokeInfo" style="top: 0vw; left: 0vw"></input> 
+           <input type="text" name="pokeWeakness" id="pokeWeakness" class="pokeInfo" style="top:1.7vw; left: 1.5vw; width: 14vw;"></input> 
+       </section>
+
+       <section class="stats" id="PS" style="top: 18vw; left: 56vw">
+                <input type="button" class="stat" id="PS_10"></input>
+                <input type="button" class="stat" id="PS_9"></input>
+                <input type="button" class="stat" id="PS_8"></input>
+                <input type="button" class="stat" id="PS_7"></input>
+                <input type="button" class="stat" id="PS_6"></input>
+                <input type="button" class="stat" id="PS_5"></input>
+                <input type="button" class="stat" id="PS_4"></input>
+                <input type="button" class="stat" id="PS_3"></input>
+                <input type="button" class="stat" id="PS_2"></input>
+                <input type="button" class="stat" id="PS_1"></input>
+       </section>
+
+       <section class="stats" id="ATK" style="top: 18vw; left: 58.7vw">
+                <input type="button" class="stat" id="ATK_10"></input>
+                <input type="button" class="stat" id="ATK_9"></input>
+                <input type="button" class="stat" id="ATK_8"></input>
+                <input type="button" class="stat" id="ATK_7"></input>
+                <input type="button" class="stat" id="ATK_6"></input>
+                <input type="button" class="stat" id="ATK_5"></input>
+                <input type="button" class="stat" id="ATK_4"></input>
+                <input type="button" class="stat" id="ATK_3"></input>
+                <input type="button" class="stat" id="ATK_2"></input>
+                <input type="button" class="stat" id="ATK_1"></input>
+       </section>
+
+       <section class="stats" id="DEF" style="top: 18vw; left: 61.8vw">
+                <input type="button" class="stat" id="DEF_10"></input>
+                <input type="button" class="stat" id="DEF_9"></input>
+                <input type="button" class="stat" id="DEF_8"></input>
+                <input type="button" class="stat" id="DEF_7"></input>
+                <input type="button" class="stat" id="DEF_6"></input>
+                <input type="button" class="stat" id="DEF_5"></input>
+                <input type="button" class="stat" id="DEF_4"></input>
+                <input type="button" class="stat" id="DEF_3"></input>
+                <input type="button" class="stat" id="DEF_2"></input>
+                <input type="button" class="stat" id="DEF_1"></input>
+      </section>
+
+      <section class="stats" id="SP.ATK" style="top: 18vw; left: 64.8vw">
+                <input type="button" class="stat" id="SP_ATK_10"></input>
+                <input type="button" class="stat" id="SP_ATK_9"></input>
+                <input type="button" class="stat" id="SP_ATK_8"></input>
+                <input type="button" class="stat" id="SP_ATK_7"></input>
+                <input type="button" class="stat" id="SP_ATK_6"></input>
+                <input type="button" class="stat" id="SP_ATK_5"></input>
+                <input type="button" class="stat" id="SP_ATK_4"></input>
+                <input type="button" class="stat" id="SP_ATK_3"></input>
+                <input type="button" class="stat" id="SP_ATK_2"></input>
+                <input type="button" class="stat" id="SP_ATK_1"></input>
+      </section>
+
+      <section class="stats" id="SP.DEF" style="top: 18vw; left: 67.9vw">
+                <input type="button" class="stat" id="SP_DEF_10"></input>
+                <input type="button" class="stat" id="SP_DEF_9"></input>
+                <input type="button" class="stat" id="SP_DEF_8"></input>
+                <input type="button" class="stat" id="SP_DEF_7"></input>
+                <input type="button" class="stat" id="SP_DEF_6"></input>
+                <input type="button" class="stat" id="SP_DEF_5"></input>
+                <input type="button" class="stat" id="SP_DEF_4"></input>
+                <input type="button" class="stat" id="SP_DEF_3"></input>
+                <input type="button" class="stat" id="SP_DEF_2"></input>
+                <input type="button" class="stat" id="SP_DEF_1"></input>
+      </section>
+
+      <section class="stats" id="SPEED" style="top: 18vw; left: 71vw">
+                <input type="button" class="stat" id="SPEED_10"></input>
+                <input type="button" class="stat" id="SPEED_9"></input>
+                <input type="button" class="stat" id="SPEED_8"></input>
+                <input type="button" class="stat" id="SPEED_7"></input>
+                <input type="button" class="stat" id="SPEED_6"></input>
+                <input type="button" class="stat" id="SPEED_5"></input>
+                <input type="button" class="stat" id="SPEED_4"></input>
+                <input type="button" class="stat" id="SPEED_3"></input>
+                <input type="button" class="stat" id="SPEED_2"></input>
+                <input type="button" class="stat" id="SPEED_1"></input>
+      </section>
+    
+      <section class="items">
+            <div class="item" id="item_1"></div>
+            <div class="item" id="item_2"></div>
+            <div class="item" id="item_3"></div>
+            <div class="item" id="item_4"></div>
+            <div class="item" id="item_5"></div>
+            <input type="text" class="move" id="move_1" style="border-bottom: solid rgba(49,167,241);"></input>
+            <input type="text" class="move" id="move_2" style="border-bottom: solid rgba(49,167,241);"></input>
+            <input type="text" class="move" id="move_3" style="border-bottom: solid rgba(49,167,241);"></input>
+            <input type="text" class="move" id="move_4" style="border-bottom: solid rgba(49,167,241);"></input>
+            <input type="text" class="move" id="move_5" style="border-bottom: solid rgba(49,167,241);"></input>
+            <input type="text" class="move" id="move_1_1" style="border-top: solid rgba(49,167,241);"></input>
+            <input type="text" class="move" id="move_2_1" style="border-top: solid rgba(49,167,241);"></input>
+            <input type="text" class="move" id="move_3_1" style="border-top: solid rgba(49,167,241);"></input>
+            <input type="text" class="move" id="move_4_1" style="border-top: solid rgba(49,167,241);"></input>
+            <input type="text" class="move" id="move_5_1" style="border-top: solid rgba(49,167,241);"></input>
+      </section>
+
+       <section class="pokepropor" style="top:36.7vw; left:58.1vw">
+        <input type="text" name="pokeHeight" id="pokeHeight" class="pokeInfo" style="top:0vw; left:0vw; width: 2.8vw;"></input> 
+        <input type="text" name="pokeWeight" id="pokeWeight" class="pokeInfo" style="top:0vw; left:10.3vw; width: 4vw;"></input> 
+       </section>
+
+   </body>
+
+    <footer>
+        <script src="./04 JS-Practica_Pokedex_LaunchX.js"></script>
+    </footer>
+
+</html>
